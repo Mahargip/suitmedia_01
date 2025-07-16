@@ -11,6 +11,10 @@ class NetworkUtil {
       receiveTimeout: const Duration(seconds: 10),
       contentType: 'application/json',
       responseType: ResponseType.json,
+      headers: {
+        'x-api-key': 'reqres-free-v1',
+        'Accept': 'application/json',
+      }
     );
 
     _dio = Dio(options);
